@@ -7,7 +7,7 @@
 
 const char* ssid     = "";      // SSID / dejar en blanco
 const char* password = "";      // Password / dejar en blanco
-const char* host = "192.168.0.7";//cambiar / poner ip o url sin el "http://" o el "https://"
+const char* host = "192.168.0.XXXX";//cambiar / poner ip o url sin el "http://" o el "https://"
 const int   port = 80; // cambiar si se necesita http = 80; https = 443;
 
 
@@ -101,7 +101,7 @@ void loop() {
     }
 
     
-    String url = "/ESPRelebox.php?hostname=localhost&datebase=id18712551_houseautomationesp&tabla=tablatry3&username=id18712551_houseautomation&password=id18712551"; // cambiar depende archivo.php y credenciales de inicio MySQL
+    String url = "/ESPRelebox.php?hostname=XXXXXXXXXXXX&datebase=XXXXXXXXXXXX&tabla=XXXXXXXXXXXX&username=XXXXXXXXXXXX&password=XXXXXXXXXXXX"; // cambiar depende archivo.php y credenciales de MySQL
     url += TempSensor();
     url += PIR(); //pir
     Serial.print(url);
